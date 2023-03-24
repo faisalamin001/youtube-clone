@@ -83,29 +83,39 @@ const Video = () => {
                   variant='outlined'
                   aria-label='outlined button group'
                 >
-                  <Button variant='outlined' sx={{ color: 'white' }} startIcon={<ThumbUpIcon />}>
+                  <Button
+                    variant='outlined'
+                    sx={{ color: 'white' }}
+                    startIcon={<ThumbUpIcon />}
+                  >
                     <Typography variant='body1'>
                       {parseInt(likeCount).toLocaleString()}
                     </Typography>
                   </Button>
-                  <Button variant='outlined' sx={{ color: 'white' }} startIcon={<ThumbDownIcon />}>
+                  <Button
+                    variant='outlined'
+                    sx={{ color: 'white' }}
+                    startIcon={<ThumbDownIcon />}
+                  >
                     <Typography variant='body1'>236</Typography>
                   </Button>
                 </ButtonGroup>
               </Stack>
             </Stack>
-            {/* <Stack>
-            <Box sx={{ display: 'flex' }}>
+            <Stack>
+              <Box sx={{ display: 'flex' }}>
                 <VisibilityIcon />
                 <Typography variant='body1'>
-                      {parseInt(viewCount).toLocaleString()}
+                  {parseInt(viewCount).toLocaleString()}
                 </Typography>
-            </Box>
-            <Box sx={{ display: 'flex' }}>
-                  <CommentIcon />
-                    <Typography variant='body1'> {parseInt(commentCount).toLocaleString()}</Typography>
-                  </Box>
-            </Stack> */}
+              </Box>
+              <Box sx={{ display: 'flex' }}>
+                <CommentIcon />
+                <Typography variant='body1'>
+                  {' '}
+                  {parseInt(commentCount).toLocaleString()}
+                </Typography>
+              </Box>
             </Stack>
           </Box>
         </Box>
