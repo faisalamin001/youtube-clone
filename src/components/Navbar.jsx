@@ -8,7 +8,7 @@ const Navbar = () => (
   <Stack
     direction='row'
     alignItems='center'
-    p={2}
+    p={1}
     sx={{
       position: 'sticky',
       backgroundColor: '#0f0f0f',
@@ -19,8 +19,7 @@ const Navbar = () => (
     }}
   >
     <Link to='/' style={{ display: 'flex', alignItems: 'center' }}>
-      <img src={logo} alt='logo' height={45} />
-      
+      <img src={logo} alt='logo' height={35} />
     </Link>
     <SearchBar />
     <SettingsIcon sx={{ color: 'white', paddingRight: '15px' }} />
