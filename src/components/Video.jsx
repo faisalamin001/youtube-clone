@@ -112,7 +112,7 @@ const Video = () => {
               <Box sx={{ display: 'flex' }}>
                 <CommentIcon />
                 <Typography variant='body1'>
-                  {' '}
+                  
                   {parseInt(commentCount).toLocaleString()}
                 </Typography>
               </Box>
